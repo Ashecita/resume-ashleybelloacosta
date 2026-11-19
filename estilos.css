@@ -1,0 +1,93 @@
+/* =========================================
+   Práctica: Box Model
+   Nombre: Ashley Bello Acosta - 2021675
+   ========================================= */
+
+/* Estilos base (ya vienen hechos, no los borres) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2efe9;
+    color: #333333;
+}
+
+/* ---- Escribe tu CSS debajo de esta línea ---- */
+
+/* ===== PARTE 1: PADDING ===== */
+#encabezado {
+    background-color: #8b2e16;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #d8cfc0;
+    margin-bottom: 25px;
+}
+
+.boton {
+    background-color: #e07a1f;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 24px;
+    border: 2px solid #b35f12;
+    border-radius: 6px;
+}
+
+.etiqueta {
+    background-color: #2f6b3a;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+/* ===== PARTE 2: BORDER ===== */
+.tarjeta h3 {
+    border-bottom: 3px dashed #e07a1f;
+}
+
+/* ===== PARTE 3: MARGIN ===== */
+
+/* Respuesta punto 9: Al poner margin: 0 en el body, desapareció el espacio
+   blanco que el navegador deja por defecto alrededor de la página. Ahora el
+   encabezado y el pie quedan pegados a los bordes de la ventana. */
+body {
+    margin: 0;
+}
+
+#contenedor {
+    width: 700px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+#pie {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* ===== PARTE 4: WIDTH Y BOX-SIZING ===== */
+#caja-a, #caja-b {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #8b2e16;
+    background-color: #ffe9c7;
+    margin-bottom: 15px;
+}
+
+#caja-a {
+    box-sizing: content-box;
+}
+
+#caja-b {
+    box-sizing: border-box;
+}
